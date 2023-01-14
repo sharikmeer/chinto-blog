@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* header-wrapper 
+  add background image that is 100% width and height
+  add padding to the top and bottom
+  put it in center for amx width of small screen
+*/
+.header-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3em 0;
+}
+
+.max-w-5xl {
+  max-width: 1080px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.navbar > * {
+  margin-right: 0.7em;
+}
+
+.navbar a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar a[data-active="true"] {
+  font-weight: 800;
+  opacity: 1;
+}
+
+.about-me {
+  margin-top: 1.7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  font-weight: 100;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+.body-content {
+  padding: 2em 1em;
+}
+.body-content > *:first-child {
+  margin-bottom: 1.4em;
+}
+
+@media (min-width: 768px) {
+  .body-content {
+    padding: 3em 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .body-content > *:first-child {
+    width: 90%;
+  }
+
+  .body-content > *:first-child {
+    margin-bottom: 0em;
+  }
+}
+
+.main-header {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(135, 135, 135, 0.386);
+  margin-bottom: 1.2em;
+  letter-spacing: -1px;
+}
+
+.projects-wrapper {
+  position: sticky;
+  top: 0;
+  /* add space */
+  padding: 20px 0;
+}
+
+@meadia (max-width: 768px) {
+  .projects-wrapper {
+    position: static;
+  }
+}
+
+.posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.post-item {
+  max-width: 87%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1.2em;
+  width: 100%;
+  background: white;
+  padding: 1.5em 1.3em;
+  border-radius: 1.1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.091);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+  .post-item {
+    max-width: 100%;
+  }
+  
+}
+
+
+.post-item .date {
+  font-weight: 300;
+  color: #746cbb;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.post-item .tag {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e47ad2;
+  font-size: 1.2rem;
+  margin-top: 0.6em;
+}
+
+.post-item .title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 0.4em;
+  margin-bottom: 0.3em;
+}
+
+.post-item .body {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #746cbb9d;
+}
+
+.project-item .title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 0.4em;
+  margin-bottom: 0.3em;
+}
+
+
+.project-item .body {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #746cbb9d;
+
+  max-width: 87%;
+}
+
+.project-item img{
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 1.1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.091);
+  margin-bottom: 1.2em;
+}
