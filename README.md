@@ -1,3 +1,3 @@
 # Blog built using React Js 
 
-![image](https://user-images.githubusercontent.com/122680899/212485497-209420f5-3690-4585-81cd-6d9785c4be05.png)
+![image](https://user-images.githubusercontent.com/122680899/212485530-35c1e1fc-88f3-40d0-bac9-73815d212be3.png)
